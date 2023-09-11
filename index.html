@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <div class="container">
+        <div class="first-div">
+            <!-- Search Song -->
+            <input type="text" class="styled-input" id="search_song" placeholder="Search a Song...">
+            <button id="search_song_button"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            <!-- All Songs Section -->
+            <section id="All-Songs">
+
+                <!-- Filter by Genre -->
+                <h3 class="filter-by">Filter by Genre:</h3>
+                <select id="genre-select" class="genre_dropDown">
+                    <option value="all" selected>All</option>
+                    <option value="hiphop">HipHop</option>
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                </select>
+
+                <h3 class="all_songs_heading">All Songs</h3>
+                <!-- List of Songs -->
+                <div class="songs-list">
+
+
+                </div>
+
+            </section>
+        </div>
+        <div class="second-div">
+            <!-- Name of Music Player --->
+            <h2 class="heading1">Arpit' <sup>s</sup> Music Player</h2>
+
+            <!-- Song Card Section -->
+            <section id="song-card">
+                <div class="songCard">
+                    <img class="song_img" src="" alt="">
+                    <h4 class="song_name">Jugnu</h4>
+                    <p class="artist_name">Baadshah</p>
+                    <audio src="" id="audio" controls></audio>
+                </div>
+                <!-- Control Buttons -->
+                <button id="prev" class="btn">Prev</button>
+                <button id="add" class="btn">Add to Playlist</button>
+                <button id="next" class="btn">Next</button>
+            </section>
+        </div>
+        <div class="third-div">
+            <!--- Toogle Theme Section -->
+            <section id="toggle-theme">
+                <button id="toggle-button">Change Mode</button>
+            </section>
+            <!-- Search Playlist -->
+            <div class="playlist-Search">
+                <input type="text" class="styled-input" name="" id="search-playlist-text"
+                    placeholder="Search Playlist...">
+                <button id="search-playlist-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <!-- Playlist Section -->
+            <section id="playlist-section">
+
+                <!-- Create Playlist -->
+
+                <div class="playlistCreation">
+                    <input type="text" class="styled-input" name="" id="new-playlist"
+                        placeholder="Enter Playlist Name...">
+                    <button id="create-playlist">Create Playlist</button>
+                </div>
+                <h2 class="current-playlist-heading">Current Playlist</h2>
+                <div class="current-playlist"></div>
+                <!-- List of Playlists -->
+
+                <h2 class="all-playlist-heading">All Playlists</h2>
+                <button id=all-playlists>View All Playlists</button>
+                <!-- Playlist Container -->
+                <div class="playlist-container">
+                </div>
+
+
+                <!-- Playlist Songs Container -->
+                <h3 class="playlist-songs">Playlist Songs</h3>
+                <div class="playlist-songs-remove-button-parent">
+                    <div id="playlistSongs">
+
+                    </div>
+                    <!-- Remove Song Button -->
+                    <div class="song-remove-buttons">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- JS File -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,430 @@
+/* Google Fonts - Montseraat */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Libre+Baskerville&family=Montserrat:wght@800&family=Poppins:wght@100&display=swap');
+
+/* Universal Styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/************* Toggle Mode Styles *****************/
+
+
+/* Light Mode */
+body {
+    background-color: #82EEFD;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* divs styling */
+
+.container {
+    display: flex;
+    width: 100vw;
+
+}
+
+.first-div {
+    flex: 0 0 30vw;
+    height: 100vh;
+    position: relative;
+
+
+}
+
+.second-div {
+
+
+    flex: 0 0 40vw;
+    height: 100vh;
+}
+
+.third-div {
+
+    flex: 0 0 30vw;
+    height: 100vh;
+}
+
+/* Main Heading and Theme button styles */
+.heading1 {
+    margin-left: 6.5rem;
+    margin-top: 0.93rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+#toggle-button {
+    margin-left: 17.59rem;
+    margin-top: 0.925rem;
+    background-color: orange;
+    font-family: 'Montserrat', sans-serif;
+    width: 60px;
+    cursor: pointer;
+}
+
+#toggle-button:hover {
+    background-color: #FF2400;
+}
+
+/* Filter DropDown and All Songs Styles */
+
+.genre_dropDown {
+    position: absolute;
+    top: 60px;
+    left: 170px;
+    font-size: 15px;
+}
+
+.genre_dropDown:hover {
+    background-color: grey;
+}
+
+.filter-by {
+    position: absolute;
+    top: 58px;
+    left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Search a Song Styles */
+/* Search Song Input */
+#search_song {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+}
+
+/* Search Song Button */
+#search_song_button {
+    position: relative;
+    left: 225px;
+    top: 24px;
+    font-size: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+#search_song_button:hover {
+    background-color: #56AEFF;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.styled-input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Add a little hover effect */
+.styled-input:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+/* All songs section styles */
+.all_songs_heading {
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    background-color: orange;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*List of Songs*/
+.songs-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 150px;
+    left: 80px;
+    gap: 10px;
+}
+
+/* Song List Item Styles */
+
+.song-style {
+    background-image: linear-gradient(red, orange);
+    width: 240px;
+    height: 30px;
+    align-items: center;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.song-style:hover {
+    background-color: #ffffff;
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+/* Song Card Styles */
+.song_img {
+    margin-top: 24px;
+    margin-left: 48px;
+    width: 400px;
+    height: 300px;
+    border: 10px solid #D21F3C;
+}
+
+.song_name {
+    font-size: 2rem;
+    margin-left: 2.8rem;
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.artist_name {
+    font-size: 1rem;
+    margin-left: 3rem;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #56AEFF;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background-color: #B1D4E0;
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* Song Audio Controls styles */
+#audio {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 400px;
+}
+
+/* Next, Previous and Add to Playlist button styles */
+.btn {
+    margin-top: 10px;
+    margin-left: 80px;
+    font-size: 10px;
+    border-radius: 10%;
+    height: 30px;
+    width: 70px;
+    background-color: #FF2400;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: orange;
+}
+
+#next {
+    margin-left: 30px;
+    margin-bottom: 60px;
+}
+
+#add {
+    margin-left: 30px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Playlist Section Styles */
+/* Search Playlist styles */
+.playlist-Search {
+    margin-left: 20px;
+    margin-top: -15px;
+}
+
+#search-playlist-button {
+    font-size: 28px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    right: 3px;
+    border: none;
+}
+
+#search-playlist-button:hover {
+    background-color: #56AEFF;
+}
+
+/* Parent Container class for create Playlist part */
+.playlistCreation {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* Container for list of Playlists */
+.playlist-container {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* Playlist Songs List Heading Styles */
+.playlist-songs {
+    margin-top: 70px;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Playlist Songs List Styles */
+#playlistSongs {
+    margin-top: 20px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Style for each playlist in the list fo Playlists */
+.playlist-style {
+    background-image: linear-gradient(red, orange);
+    width: 240px;
+    height: 30px;
+    align-items: center;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 0px;
+    cursor: pointer;
+    right: 110px;
+}
+
+.playlist-style:hover {
+    background-color: #ffffff;
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+/* Styles for Current Playlist */
+.current-playlist-style {
+    background-image: linear-gradient(red, orange);
+    width: 240px;
+    height: 30px;
+    align-items: center;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.current-playlist-style:hover {
+    background-color: #ffffff;
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+/* Styles for a particular playlist song display */
+.playlist-song-style {
+    position: relative;
+    right: 80px;
+    font-family: 'Montserrat', sans-serif;
+    ;
+    background-image: linear-gradient(red, orange);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.playlist-song-style:hover {
+    background-color: #ffffff;
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+/* Style for Current Playlist heading */
+.current-playlist-heading {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style for all Playlist Heading */
+.all-playlist-heading {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* Style for remove song button */
+.song-remove-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 13px;
+    /* position: relative;
+    bottom: 53px; */
+    position: relative;
+    top: 25px;
+    right: 70px;
+
+}
+
+.song-remove-buttons button {
+    width: 30px;
+    /* margin-right: 40px; */
+
+}
+
+.remove-button {
+
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+
+}
+
+/* Parent container of playlist songs and their remove button */
+.playlist-songs-remove-button-parent {
+    display: flex;
+}
+
+/* Styles for each Playlist in the list of Playlists */
+#all-playlists {
+    font-family: 'Montserrat', sans-serif;
+    background-color: orange;
+    /* margin-left: 180px;
+    position: absolute; */
+    position: relative;
+    /* top: 219px; */
+    top: -25px;
+    cursor: pointer;
+    right: -180px;
+}
+
+#all-playlists:hover {
+    background-color: #FF2400;
+}
+
+/* Create Playlist button */
+#create-playlist {
+    background-color: orange;
+    font-family: 'Montserrat', sans-serif;
+    width: 80px;
+    cursor: pointer;
+    position: absolute;
+}
+
+#create-playlist:hover {
+    background-color: #FF2400;
+}
